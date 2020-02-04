@@ -18,14 +18,40 @@ namespace PizzaShop
             //5.A user can order more than one pizza.
             //6.After the user confirms their order, the total is displayed.
 
+           
+            Menu menu = new Menu();
+
+            menu.ShowPizza();
 
 
+            Console.WriteLine("Choose your pizza.");
+           string userInput = Console.ReadLine();
+
+            Console.WriteLine("Which dough you would like? Fat or thick?");
+            string userChoice = Console.ReadLine();
+
+            if(userChoice.ToLower() == "fat")
+            {
+               
+            }
+
+            Console.WriteLine($"Your order:{userInput} with {userChoice} dough.");
+
+            Menu ingredient = new Menu();
+            ingredient.ShowIngredients();
+            
+
+
+            Console.ReadLine();
+
+           
 
 
 
 
         }
 
+       
 
 
     }

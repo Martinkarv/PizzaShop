@@ -11,11 +11,14 @@ namespace PizzaShop
         string name;
         List<Ingredients> ingredients;
         double price;
+        //string ing1;
 
 
 
         public Pizzas(string _name,  double _price, Ingredients ing1, Ingredients ing2, Ingredients ing3, Ingredients ing4)
         {
+            ingredients = new List<Ingredients>();
+
             ingredients.Add(ing1);
             ingredients.Add(ing2);
             ingredients.Add(ing3);
@@ -40,6 +43,13 @@ namespace PizzaShop
             Console.WriteLine($"Price:{Price}");
             Console.WriteLine("Ingredients: ");
             foreach(Ingredients ingredient in ingredients)
+            {
+                Console.WriteLine(ingredient.Name);
+            }
+        }
+        public void PrintIngredients()
+        {
+            foreach (Ingredients ingredient in ingredients)
             {
                 Console.WriteLine(ingredient.Name);
             }

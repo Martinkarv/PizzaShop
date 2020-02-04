@@ -1,0 +1,6 @@
+C:\Users\karvm\source\repos\PizzaShop\PizzaShop\bin\Debug\PizzaShop.exe.config
+C:\Users\karvm\source\repos\PizzaShop\PizzaShop\bin\Debug\PizzaShop.exe
+C:\Users\karvm\source\repos\PizzaShop\PizzaShop\bin\Debug\PizzaShop.pdb
+C:\Users\karvm\source\repos\PizzaShop\PizzaShop\obj\Debug\PizzaShop.csprojAssemblyReference.cache
+C:\Users\karvm\source\repos\PizzaShop\PizzaShop\obj\Debug\PizzaShop.exe
+C:\Users\karvm\source\repos\PizzaShop\PizzaShop\obj\Debug\PizzaShop.pdb

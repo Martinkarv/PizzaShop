@@ -9,11 +9,14 @@ namespace PizzaShop
     class Menu
     {
         List<Pizzas> InMenu;
-        List<Warehouse> Ingredients;
+        List<Warehouse> IngredientsMenu;
 
         public Menu()
         {
+            IngredientsMenu = new List<Warehouse>();
+
             Ingredients salami = new Ingredients(1, "Salami", 0.50);
+            
 
             Ingredients ham = new Ingredients(2, "Ham", 0.40);
 
@@ -42,24 +45,24 @@ namespace PizzaShop
           
             InMenu = new List<Pizzas>();
 
-            Pizzas mexicana = new Pizzas("Mexicana", 5.99, );
+            Pizzas mexicana = new Pizzas("Mexicana", 5.99, salami,onion,garlic,mozarella);
             InMenu.Add(mexicana);
 
-            Pizzas quattro = new Pizzas("Quattro", 5.40);
+            Pizzas quattro = new Pizzas("Quattro", 5.40, ham, cheese, garlic, mushrooms);
             InMenu.Add(quattro);
 
-            Pizzas rustica = new Pizzas("Rustica", 7);
+            Pizzas rustica = new Pizzas("Rustica", 7,texmexSauce, mozarella,bacon,onion);
             InMenu.Add(rustica);
 
-            Pizzas alSole = new Pizzas("Al Sole", 4.50);
+            Pizzas alSole = new Pizzas("Al Sole", 4.50,mushrooms,cheese,onion,bacon);
             InMenu.Add(alSole);
 
-            Pizzas tropicana = new Pizzas("Tropicana", 6.50);
+            Pizzas tropicana = new Pizzas("Tropicana", 6.50,ham,cheese,onion,garlic);
             InMenu.Add(tropicana);
 
-            Pizzas fantasy = new Pizzas("Fantasy", 8);
-            InMenu.Add(fantasy);
-
+           // Pizzas fantasy = new Pizzas("Fantasy", 8);
+          //  InMenu.Add(fantasy);
+            
 
         }
 
@@ -67,7 +70,19 @@ namespace PizzaShop
         {
             foreach(Pizzas pizza in InMenu)
             {
-                Console.WriteLine(pizza.Name);
+                pizza.PrintPizza();
+                Console.WriteLine();
+            }
+            
+
+        }
+
+        public void ShowIngredients()
+        {
+            foreach(Warehouse ingredient in IngredientsMenu)
+            {
+                ingredient.ShowIngredients();
+                Console.WriteLine();
             }
         }
 

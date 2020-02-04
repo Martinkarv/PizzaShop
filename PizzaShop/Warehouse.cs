@@ -47,7 +47,13 @@ namespace PizzaShop
 
 
         }
-
+        public void ShowIngredients()
+        {
+            foreach (Ingredients ingredient in InStock)
+            {
+                Console.WriteLine(ingredient);
+            }
+        }
 
 
 
